@@ -7,13 +7,6 @@
     font-family: Aller;
     src: url(Aller_Bd.ttf);
 }
-header {
-    background-image: url("pet1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-}
 nav {
     display: flex;
     justify-content: space-around;
@@ -62,6 +55,13 @@ ul li a:hover{
     background-color: white;
     margin: 5px;
     transition: all 0.3s ease;
+}
+header {
+    background-image: url("pet1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 .title {
     color: #ffffff;
