@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Animal Awareness</title>
+        <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="Animal Awareness Logo">
+                </div>
+                <ul class="nav-link"> 
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="adoption.html">Adoption</a></li>
+                    <li><a href="medical.html">Medical</a></li>
+                    <li><a href="helpusout.html">Help Us Out!</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                <div class="opener">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+			<h1 class="title">We Care.<br>Animal Awareness.</h1>
+        </header>
+
+            <br><br><br><br><br>
+    
+            <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="1.jpg" alt="Cat Image"
+                        width="1520">
+                        <div class="text1"><p>Want someone who'll always listen? <br> <i>Adopt!</i> <br> Your best buddy is waiting.</p></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="2.png" alt="Dog Image"
+                        width="1520">
+                        <div class="text2">
+                            <p>A person is the best thing to <br> happen to a shelter pet. <br><b>"Be THAT Person"</b></p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="3.jpg" alt="cat and dog"
+                        width="1520">
+                        <div class="text3"><strong>"Help Me, <br> Help You"</strong> <br><small>- Milo (Shelter Pet)</small></div>
+                    </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+
+            <div class="aligning">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+            <script>
+                var slideIndex = 0;
+                showSlides(slideIndex);
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000);
+                }
+       
+            </script>
+
+       <div class="background">
+            <div class="container1">
+                <h2 class="about">~About Us~</h2>
+                <p class="paragraph">
+                    <img src="paw.png" alt="paw image"
+                    width="30"
+                    height="30">
+                    We are a non-profit organization dedicated to helping unfortunate strays on the streets
+                    of Malaysia. The rescued animals are sent to hospitals to receive appropriate treatment
+                    and are put up for adoption. Everything that we do are supported by donations from the 
+                    public as well as our sponsors. We hold charitable events for fundraising and also to raise
+                    awareness.
+                </p>
+            </div>
+		</div>
+            <br><br><br><br>
+
+        <div class="container2">
+               <div class="event"></div>
+                <div class="event" style="background-image: none; background-color: white;">
+                    <h2>Events</h2>
+                    <p>Come join our events! Every once in awhile, we organize events
+                        for pet owners to connect and have fun together. There will be
+                        many activites for everyone to do and also animal products provided by
+                        our sponsors will be sold.
+                    <br><br><br>
+
+                <ol type="1">
+                    <li>May 5th</li>
+                    <li>June 15th</li>
+                    <li>August 4th</li>
+                    <li>September 26th</li>
+                    <li>November 7th</li>
+                </ol>
+                <br>
+                <p><i>Will be updated every month</i></p>
+                <img class="walk" src="walking.png" alt="walking image"
+                width="100"
+                height="100">
+                </div>
+		</div>
+		<script src="responsive.js"></script> 
+     
+		<footer>
+			<small><i>Copyright &copy; 2019 Animal Awareness. All Rights Reserved.</i></small>
+			 <p class="contact"><a href="contactus.html">Contact Us</a></p> 
+
+		</footer>
+		</body>
+
+</html>

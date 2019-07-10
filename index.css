@@ -1,0 +1,293 @@
+﻿* {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+}
+
+@font-face {
+        font-family: Aller;
+        src: url(Aller_Bd.ttf);
+}
+body {
+        background-color: #dbe9ff;
+        font-family:Arial, Helvetica, sans-serif;
+	height:auto;
+}
+nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color:rgb(0, 155, 182);
+        font-family: Aller;
+        font-size: 110%;
+        position: relative;
+        top: 20px;
+        border-radius: 30px;
+        padding: 40px; 
+        height: 10px; 
+}
+.logo img{
+	display: block;
+        float: left;
+        width: 200px;
+        height: auto;
+}
+.nav-link {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+}
+.nav-link li {
+        list-style: none;
+}
+.nav-link a { 
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+}
+
+ul li a:hover{
+        color: black;
+        border-radius: 30px;
+        background-color: aliceblue;
+}
+.title {
+        display: none;
+}
+.opener div {
+        display: none;
+        cursor: pointer;
+}
+.opener div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+}
+.aligning {
+	text-align:center;
+	height:auto;
+}
+footer {
+        background-color: rgb(0, 155, 182);
+        text-align: left;
+        padding-left:1%;
+        padding-top:1%;
+}
+.slideshow-container {
+        max-width: 1520px;
+        max-height: 700px;
+        position: relative;
+        bottom: 60px;
+        margin: auto;
+        overflow: hidden;
+}
+.mySlides {
+        display: none;
+}
+.next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+}
+.prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+}
+.prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+} 
+.text1 {
+        border: solid rgb(0, 0, 0) 5px;
+        text-shadow: 5px 5px 10px black;
+        color: white;
+        font-family: cursive;
+        font-size: 250%;
+        padding: 8px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        top: 40px;
+}
+.text2 {
+        font-family: volkorn;
+        font-size: 50px;
+        position: relative;
+        bottom: 650px;
+        left: 20px;
+}
+.text3 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 500%;
+        position: relative;
+        left: 320px;
+        bottom: 570px;
+        text-align: center;
+}
+.fade {
+        animation-name: fade;
+        animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4;} 
+  to {opacity: 1;}
+}
+.about {
+        text-align: center; 
+        font-size: 10mm;
+        padding-top: 20px;
+}
+.paragraph {
+        text-align: center;
+        font-size: 5.5mm;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+}
+.container1 {
+        border: solid 10px;
+        border-color: grey;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0 50px 0 50px;
+}
+.container2 {
+        margin: 0 50px 50px;
+        border: solid 10px;
+        border-color: grey;
+        padding-bottom: 0px;
+
+}
+.container2:after {
+	content:"";
+	display:table;
+	clear:both;
+	border: solid 10px;
+}
+.event{
+        background-image: url(event.jpg);
+        background-repeat: no-repeat;
+	float:left;
+	width:50%;
+	padding:10px;
+	height:300px;
+	flex:33.33%;
+	padding:3%;
+}
+.background {
+        background-image: url("doggywallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+}
+ol {
+        padding-left: 30px;
+}
+.walk {
+        position: relative;
+        left: 300px;
+        bottom: 130px;
+}
+.contact {
+        text-align: right;
+        padding-right: 40px;
+        position: relative;
+        bottom: 15px;
+}
+.contact a {
+        text-decoration: none;
+        color: white;
+}
+.contact a:hover {
+        color: yellow;
+}
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    .logo img {
+        float: right;
+        width: 200px;
+        height: auto;
+    }
+    .nav-link {
+        position: absolute;
+        right: 0px;
+        height: 86vh;
+        top: 10vh;
+        background-color:rgb(0, 155, 182);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .title {
+        display: block;
+        color: #ffffff;
+        font-size: 200%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 5px 5px 10px black;
+    }
+    .opener div {
+        display: block;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+     header {
+        background-image: url("in.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+}
+     .slideshow-container {
+	display:none;
+}
+     .container1{
+        border: solid 5px;
+        border-color: grey;
+	}
+     .about{
+	font-size:100%;
+	}
+     .paragraph {
+        font-size: 100%;
+	padding:5%;
+        }
+      .event {
+        width: 100%;
+        font-size:100%;
+      }
+       .walk {
+        position: relative;
+        left: 70%;
+        bottom: 130px;
+        }
+}
