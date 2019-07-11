@@ -7,6 +7,10 @@
     font-family: Aller;
     src: url(Aller_Bd.ttf);
 }
+body {
+    background-color:#dbe9ff;
+    font-family: "Arial";
+}
 nav {
     display: flex;
     justify-content: space-around;
