@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: lightblue;
 }
 @font-face {
     font-family: Aller;
@@ -21,6 +20,9 @@ nav {
     border-radius: 30px;
     padding: 40px; 
     height: 10px; 
+}
+body {
+    background-color:lightblue;
 }
 .logo img{
     float: left;
