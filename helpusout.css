@@ -57,7 +57,7 @@ ul li a:hover{
     transition: all 0.3s ease;
 }
 header {
-    background-image: url("pet1.jpg");
+    background-image: url("pet1.JPG");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -186,7 +186,7 @@ footer {
         text-align: center;
     }
     header {
-        background-image: url("pet1.jpg");
+        background-image: url("pet1.JPG");
         background-position: center;
         background-attachment: fixed;
         height: 89vh;
